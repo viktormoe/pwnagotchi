@@ -1,8 +1,8 @@
 main.plugins.bt-tether.devices.ios-phone.enabled = true
 main.plugins.bt-tether.devices.ios-phone.search_order = 1
 main.plugins.bt-tether.devices.ios-phone.mac = "xxxxxxxxxxx"
-main.plugins.bt-tether.devices.ios-phone.ip = "172.20.10.6"
-main.plugins.bt-tether.devices.ios-phone.netmask = 14
+main.plugins.bt-tether.devices.ios-phone.ip = "172.20.10.6" 
+main.plugins.bt-tether.devices.ios-phone.netmask = 14 # This is '24' in a lot of configs, iPhone using '14'
 main.plugins.bt-tether.devices.ios-phone.interval = 1
 main.plugins.bt-tether.devices.ios-phone.scantime = 15
 main.plugins.bt-tether.devices.ios-phone.max_tries = 0
