@@ -8,3 +8,17 @@ main.plugins.bt-tether.devices.ios-phone.scantime = 15
 main.plugins.bt-tether.devices.ios-phone.max_tries = 0
 main.plugins.bt-tether.devices.ios-phone.share_internet = true
 main.plugins.bt-tether.devices.ios-phone.priority = 99
+
+
+Run these commands to connect to iphone 
+sudo su 
+bluetoothctl
+scan on
+discoverable on
+paired-devices # copy device address. Will be empty for a new installation!
+untrust *device address* #run this command a few times
+remove *device address* #run this command a few times
+paired-devices #make sure list is empty, if not- run previous command until it is empty
+pair *device address* #*In short time (maybe not immediately) you will be prompted on the phone to allow connection from your pwnagotchi hostname- pair*
+trust *device address* 
+exit
